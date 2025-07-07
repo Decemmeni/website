@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap');
+
+html {
+    background-color: #000000;
+    scrollbar-width: none;
+}
+
+body {
+    scrollbar-width: none;
+    padding: 100px;
+}
+
+.divTest {
+    background-color: #FF0000;
+}
+
+@font-face {
+    font-family: 'Toasty Milk';
+    src: url('Toasty\ Milk.ttf');
+}
+
+.cursor {
+    cursor: url(https://www.pets-n-friends.com/image.edit/imagelibrary/petsnfriends/shapes/dot_06_white.png);
+}
+
+h1 {
+    font-family: "Toasty Milk";
+    color: #FFF;
+    rotate: 0deg;
+}
+
+p {
+    padding-left: 50px;
+    color: #FFFFFF;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    justify-content: space-around;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    color: #FFFFFF;
+    float: left;
+}
+
+li a {
+    display: block;
+    font-size: large;
+    padding: 8px;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 48px;
+    font-family: "Rubik Doodle Shadow";
+}
+
+#scrolling-image {
+    position: fixed;
+    top: 98%;
+    right: 0;
+    width: 2.5%;
+    transform: translate(0, -100%);
+    will-change: transform;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .slide-in {
+        animation: loadSlideIn 1s 1;
+    }
+
+    .delayed-slide-in {
+        animation: loadSlideIn 2s 1;
+    }
+}
+
+.face-left {
+    transform: scaleX(-1);
+}
+
+.face-right {
+    transform: scaleX(1);
+}
+
+/* Animation related stuff */
+
+@keyframes loadSlideIn {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
