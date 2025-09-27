@@ -30,6 +30,7 @@ h1 {
 }
 
 p {
+    font-family: "Caveat", cursive;
     padding-left: 50px;
     color: #FFFFFF;
 }
@@ -108,4 +109,8 @@ li a {
     100% {
         transform: translateX(0);
     }
+}
+
+a {
+    color: #647FBC
 }
