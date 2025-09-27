@@ -55,7 +55,9 @@ ul {
 }
 
 a {
+    font-family: "Caveat", cursive;
     text-decoration: none;
+    color: #647FBC
 }
 
 li {
@@ -69,7 +71,7 @@ li a {
     padding: 8px;
     text-decoration: none;
     color: #FFFFFF;
-    font-size: 48px;
+    font-size: 2.5rem;
     font-family: "Rubik Doodle Shadow";
 }
 
@@ -111,6 +113,14 @@ li a {
     }
 }
 
-a {
-    color: #647FBC
+.zoom {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    transition: transform 0.4s ease;
+    cursor: pointer;
+}
+
+.zoom:hover {
+    transform: scale(1.6);
 }
