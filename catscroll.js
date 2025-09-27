@@ -32,13 +32,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function animate() {
         if (img.src.indexOf("CatCar.png") === -1) {
-            img.src = "CatCar.png";
+            img.src = "/CatCar.png";
           }
           
           clearTimeout(scrollTimer);
     
           scrollTimer = setTimeout(() => {
-            img.src = "CatCarIdle.png";
+            img.src = "/CatCarIdle.png";
           }, 150);
     }
   
